@@ -10,19 +10,6 @@
   font-size: 10px;
   scroll-behavior: smooth;
 
-  /* Dynamic Color Theme */
-  --color-theme-d-1: #ffffff;
-  --color-theme-d-2: #000000;
-  --color-theme-d-3: #12452c;
-  --color-theme-d-4: #2f8d03;
-  --color-theme-d-5: #d9eca4;
-  --color-theme-d-6: #FFDFA1;
-  --color-theme-d-7: #fdf9ee;
-  --color-theme-d-8: #eaf8d7;
-  --color-theme-d-9: #db885a;
-  --color-theme-d-10: rgba(255, 223, 161, 0.9);
-  --color-theme-d-11: #872e47;
-
   /* Static Color Theme */
   --color-theme-s-1: #ffffff;
   --color-theme-s-2: #000000;
@@ -36,14 +23,18 @@
   --color-theme-s-10: rgba(255, 223, 161, 0.95);
   --color-theme-s-11: #872e47;
 
-  /* Dynamic Color Type */
-  --color-type-d-1: #ffffff;
-  --color-type-d-2: #000000;
-  --color-type-d-3: #12452c;
-  --color-type-d-4: #2f8d03;
-  --color-type-d-5: #872e47;
-  --color-type-d-6: #05140D;
-  --color-type-d-7: #FFDFA1;
+  /* Dynamic Color Theme */
+  --color-theme-d-1: var(--color-theme-s-1);
+  --color-theme-d-2: var(--color-theme-s-2);
+  --color-theme-d-3: var(--color-theme-s-3);
+  --color-theme-d-4: var(--color-theme-s-4);
+  --color-theme-d-5: var(--color-theme-s-5);
+  --color-theme-d-6: var(--color-theme-s-6);
+  --color-theme-d-7: var(--color-theme-s-7);
+  --color-theme-d-8: var(--color-theme-s-8);
+  --color-theme-d-9: var(--color-theme-s-9);
+  --color-theme-d-10: var(--color-theme-s-10);
+  --color-theme-d-11: var(--color-theme-s-11);
 
   /* Static Color Type */
   --color-type-s-1: #ffffff;
@@ -53,6 +44,15 @@
   --color-type-s-5: #872e47;
   --color-type-s-6: #05140D;
   --color-type-s-7: #FFDFA1;
+
+  /* Dynamic Color Type */
+  --color-type-d-1: var(--color-type-s-1);
+  --color-type-d-2: var(--color-type-s-2);
+  --color-type-d-3: var(--color-type-s-3);
+  --color-type-d-4: var(--color-type-s-4);
+  --color-type-d-5: var(--color-type-s-5);
+  --color-type-d-6: var(--color-type-s-6);
+  --color-type-d-7: var(--color-type-s-7);
 
   /* Dynamic Padding */
   --padding-d-xl-v: calc(2rem + 8vh);
@@ -390,6 +390,7 @@ img {
 }
 
 .best-sellers__products--product__price {
+  font-size: var(--font-size-s-m);
   font-weight: 600;
 }
 
@@ -521,6 +522,7 @@ img {
 }
 
 .packages__container--package__info--price > span:first-child {
+  font-size: var(--font-size-s-s);
   color: var(--color-type-d-5);
 }
 
@@ -1015,6 +1017,14 @@ img {
 
   .packages__container--package__info--name {
     font-size: var(--font-size-s-l);
+  }
+
+  .packages__container--package__info--price > span:first-child {
+    font-size: var(--font-size-s-m);
+  }
+  
+  .packages__container--package__info--price > span:last-child {
+    font-size: var(--font-size-s-s);
   }
 
   .testimonials__container--testimonial {

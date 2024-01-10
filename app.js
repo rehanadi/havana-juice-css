@@ -2,18 +2,21 @@
 
 // Toggle mobile navigation menu
 const nav = document.querySelector('.header__nav')
+const navLink = document.querySelector('.header__nav--link')
 const burger = document.querySelector('.hamburger')
 const burgerLine1 = document.querySelector('.hamburger__line:first-child')
 const burgerLine2 = document.querySelector('.hamburger__line:nth-child(2)')
 const burgerLine3 = document.querySelector('.hamburger__line:last-child')
 
-burger.addEventListener('click', () => {
+const toggleNav = () => {
   burger.classList.toggle('hamburger__close')
   burgerLine1.classList.toggle('hamburger__line-1')
   burgerLine2.classList.toggle('hamburger__line-2')
   burgerLine3.classList.toggle('hamburger__line-3')
   nav.classList.toggle('show__nav')
-})
+}
+
+burger.addEventListener('click', toggleNav)
 
 // Create download section element
 const download = document.createElement('section')
