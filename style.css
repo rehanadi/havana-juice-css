@@ -1030,6 +1030,7 @@ img {
 
   .testimonials__container--testimonial {
     flex-basis: 75%;
+    padding: var(--padding-d-l-v) var(--padding-d-l-h);
   }
 
   .footer__content {
