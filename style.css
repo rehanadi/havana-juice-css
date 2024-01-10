@@ -20,7 +20,7 @@
   --color-theme-s-7: #fdf9ee;
   --color-theme-s-8: #eaf8d7;
   --color-theme-s-9: #db885a;
-  --color-theme-s-10: rgba(255, 223, 161, 0.95);
+  --color-theme-s-10: rgba(232, 180, 79, 0.97);
   --color-theme-s-11: #872e47;
 
   /* Dynamic Color Theme */
@@ -834,7 +834,7 @@ img {
     right: 0;
     height: 100vh;
     padding: var(--padding-d-m-v) var(--padding-d-xl-h);
-    background-color: var(--color-theme-d-10);
+    background-color: var(--color-theme-s-10);
     z-index: 9;
     transform: translateX(100rem);
     transition: all 0.5s ease-in-out;
@@ -873,7 +873,7 @@ img {
   }
 
   .hamburger__close {
-    background-color: var(--color-theme-d-10);
+    background-color: var(--color-theme-s-10);
   }
 
   .hamburger__line {
