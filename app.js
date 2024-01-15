@@ -108,7 +108,6 @@ const setLightTheme = () => {
   root.style.setProperty('--color-type-d-6', '#05140D')
   root.style.setProperty('--color-type-d-7', '#FFDFA1')
   
-
   localStorage.setItem('theme', 'light')
 }
 
